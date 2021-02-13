@@ -1,0 +1,16 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: steelblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    color: ghostwhite;
+    letter-spacing: 2px;
+}
