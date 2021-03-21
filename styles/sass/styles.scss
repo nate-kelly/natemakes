@@ -1,21 +1,41 @@
-@import 'setup';
+@import "setup";
+@import "variables";
+@import "header";
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: #40d6a2;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: $green;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 500;
+  color: $darkgrey;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 h1 {
-  font-family: 'Epilogue', sans-serif;
-  font-size: 5rem;
-  font-weight: 500;
-  color: #333333;
-  letter-spacing: 2px;
+  font-size: calc(4rem + 2vw);
+}
+
+h2 {
+  font-size: calc(3rem + 1vw);
+}
+
+h3 {
+  font-size: calc(2rem + 1vw);
+}
+
+p {
+  font-size: calc(1.8rem + 1vw);
+  font-weight: 300;
+  line-height: 1.4;
 }

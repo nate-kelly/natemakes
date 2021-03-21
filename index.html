@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan Kelly - Front-End Web Developer</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./styles/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Kelly - Front-End Web Developer</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    <h1>New stuff coming soon... ⌛</h1>
+  <header>
+    <div class="wrapper">
+      <nav>
+        <ul class="nav">
+          <li>About</li>
+          <li>Projects</li>
+          <li>Skills</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+
+      <h1>Hi, I'm Nathan.</h1>
+      <h2>I make websites.</h2>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <div class="wrapper">
+        <h3>About me</h3>
+        <p>I'm a front-end web developer with a background in digital marketing. After a decade working in Toronto's performing arts scene designing ads, making videos, taking photos, drafting social media posts (and whatever else that was needed), I've spent the past few months of the pandemic with the cool people at Juno College learning to code... at home in my sweatpants. I'm a dog dad and occasional DJ with a love of minimalist design, electronic music and science fiction. Wanna talk about web dev projects, Star Trek or synthesizers? Let's connect!</p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="wrapper">
+        <h3>Things I've made</h3>
+        <p>Bored &amp; Lonely | React, API, Firebase</p>
+        <p>It's been a bit of a year. So I made this single-page React application that generates a random activity to do based on a bunch of categories. Save your activity for later and get to it when you finally pull yourself out of bed.</p>
+
+        <p>FlavourTown | JavaScript, API</p>
+        <p>FlavourTown is a JavaScript application that can turn you into a cannabis snob. Select from a variety of cannabis flavour profiles and the API will generate a randomized list of strains with more information. Like wine but, you know, for people who smoke weed.</p>
+        
+        <p>Boat Ride Adventures | SCSS, Flexbox</p>
+        <p>Remember travel? Boats? I'm not a boat person but still... sigh. This is my first bootcamp project—a multi-page responsive PDF design conversion built using Sass and Flexbox.</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="wrapper">
+        <h3>Skills I have</h3>
+        <p>Skill icon grid goes here. HTML5, CSS3/SASS, JavaScript, React, REST APIs, Firebase, GitHub/Git</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="wrapper">
+        <form action="#" class="form">
+          <label for="name" class="sr-only">Enter your name:</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name:">
+
+          <label for="email" class="sr-only">Enter your email:</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email:">
+
+          <label for="message" class="sr-only">What's up?</label>
+          <textarea name="message" id="message" placeholder="What's up?" cols=30 rows="1"></textarea>
+
+          <button type="submit">Reach out through the void</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Nathan Kelly in the year 2021.</p>
+  </footer>
 </body>
+
 </html>
