@@ -5,14 +5,17 @@ html {
 }
 
 body {
-  background: steelblue;
+  background: #40d6a2;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 3rem;
-  font-weight: 200;
-  color: ghostwhite;
+}
+
+h1 {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 5rem;
+  font-weight: 500;
+  color: #333333;
   letter-spacing: 2px;
 }
