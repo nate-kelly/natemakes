@@ -1,0 +1,31 @@
+footer {
+  background: #333333;
+  padding: 3rem 0;
+  color: $offwhite;
+  text-align: center;
+
+  a {
+    color: inherit;
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: $green;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  .fab {
+    font-size: 3rem;
+    margin: 0 3rem;
+    transition: transform 0.2s linear;
+
+    &:hover {
+      transform: scale(2);
+    }
+  }
+}

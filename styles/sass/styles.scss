@@ -4,6 +4,7 @@
 @import "projects";
 @import "skills";
 @import "contact";
+@import "footer";
 
 html {
   font-size: 62.5%;
@@ -13,7 +14,6 @@ html {
 body {
   font-family: 'Epilogue', sans-serif;
   font-size: 2rem;
-  font-weight: 400;
   color: $darkgrey;
 }
 
@@ -25,14 +25,17 @@ body {
 
 h1 {
   font-size: calc(4rem + 2vw);
+  font-weight: 500;
 }
 
 h2 {
   font-size: calc(3rem + 1vw);
+  font-weight: 500;
 }
 
 h3 {
   font-size: calc(2rem + 1vw);
+  font-weight: 500;
   margin-bottom: 3rem;
 }
 
@@ -58,11 +61,4 @@ section {
   &:nth-child(even) {
     background: $lightgray;
   }
-}
-
-footer {
-  background: #333333;
-  padding: 1.5rem 0;
-  color: $offwhite;
-  text-align: center;
 }

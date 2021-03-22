@@ -289,6 +289,7 @@ header {
 
 .header-container a {
   color: inherit;
+  font-weight: 300;
   text-decoration: none;
   padding: 1rem;
 }
@@ -305,10 +306,6 @@ header {
   margin-bottom: 5rem;
 }
 
-.fab {
-  font-size: 7rem;
-}
-
 .skill-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +316,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skill-list .fab {
+  font-size: 7rem;
 }
 
 form {
@@ -378,6 +379,54 @@ form button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+form button:hover, form button:focus {
+  background: #57737A;
+  color: #fafafa;
+}
+
+footer {
+  background: #333333;
+  padding: 3rem 0;
+  color: #fafafa;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+footer a:hover, footer a:focus {
+  color: #40d6a2;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+}
+
+.socials .fab {
+  font-size: 3rem;
+  margin: 0 3rem;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.socials .fab:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 html {
@@ -388,7 +437,6 @@ html {
 body {
   font-family: 'Epilogue', sans-serif;
   font-size: 2rem;
-  font-weight: 400;
   color: #333333;
 }
 
@@ -400,14 +448,17 @@ body {
 
 h1 {
   font-size: calc(4rem + 2vw);
+  font-weight: 500;
 }
 
 h2 {
   font-size: calc(3rem + 1vw);
+  font-weight: 500;
 }
 
 h3 {
   font-size: calc(2rem + 1vw);
+  font-weight: 500;
   margin-bottom: 3rem;
 }
 
@@ -433,11 +484,4 @@ section:nth-child(odd) {
 
 section:nth-child(even) {
   background: #f5f5f5;
-}
-
-footer {
-  background: #333333;
-  padding: 1.5rem 0;
-  color: #fafafa;
-  text-align: center;
 }

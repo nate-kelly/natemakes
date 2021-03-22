@@ -41,5 +41,12 @@ form {
     cursor: pointer;
     padding: 2rem 4rem;
     align-self: center;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus {
+      background: $darkgreen;
+      color: $offwhite;
+    }
   }
 }
