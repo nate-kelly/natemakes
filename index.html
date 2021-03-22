@@ -15,9 +15,12 @@
 </head>
 
 <body>
+  
   <header>
     <div class="wrapper">
       <div class="header-container">
+        <h1>Hi, I'm Nathan.</h1>
+        <h2>I make websites.</h2>
         <nav>
           <ul class="nav">
             <li><a href="#about">About</a></li>
@@ -26,13 +29,12 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <h1>Hi, I'm Nathan.</h1>
-        <h2>I make websites.</h2>
       </div>
     </div>
   </header>
 
   <main>
+    
     <section class="about" id="about">
       <div class="wrapper">
         <h3>About me</h3>
@@ -43,26 +45,47 @@
     <section class="projects" id="projects">
       <div class="wrapper">
         <h3>Things I've made</h3>
-        <p><a href="https://bored-and-lonely.netlify.app/" target="_blank">Bored &amp; Lonely</a> | React, API, Firebase</p>
-        <p>It's been a bit of a year. So I made this single-page React application that generates a random activity to do based on a bunch of categories. Save your activity for later and get to it when you finally pull yourself out of bed.</p>
-
-        <p><a href="https://pisces-crew.github.io/flavourTown/" target="_blank">FlavourTown</a> | JavaScript, API</p>
-        <p>FlavourTown is a JavaScript application that can turn you into a cannabis snob. Select from a variety of cannabis flavour profiles and the API will generate a randomized list of strains with more information. Like wine but, you know, for people who smoke weed.</p>
-        
-        <p><a href="https://harman-nathan.github.io/harman-nathan-project-1/" target="_blank">Boat Ride Adventures</a> | SCSS, Flexbox</p>
-        <p>Remember travel? Boats? I'm not a boat person but still... sigh. This is my first bootcamp project—a multi-page responsive PDF design conversion built using Sass and Flexbox.</p>
+        <div class="project-info">
+          <div>
+            <img src="./assets/bored-devices.png" alt="Laptop and phone displaying screenshot of project">
+          </div>
+          <div>
+            <p><a href="https://bored-and-lonely.netlify.app/" target="_blank">Bored &amp; Lonely</a> | React, API, Firebase</p>
+            <p>It's been a bit of a year. So I made this single-page React application that generates a random activity to do based on a bunch of categories. Save your activity for later and get to it when you finally pull yourself out of bed.</p>
+          </div>
+        </div>
+        <div class="project-info">
+          <div>
+            <img src="./assets/bored-devices.png" alt="Laptop and phone displaying screenshot of project">
+          </div>
+          <div>
+            <p><a href="https://pisces-crew.github.io/flavourTown/" target="_blank">FlavourTown</a> | JavaScript, API</p>
+            <p>FlavourTown is a JavaScript application that can turn you into a cannabis snob. Select from a variety of cannabis flavour profiles and the API will generate a randomized list of strains with more information. Like wine but, you know, for people who smoke weed.</p>
+          </div>
+        </div>
+        <div class="project-info">
+          <div>
+            <img src="./assets/bored-devices.png" alt="Laptop and phone displaying screenshot of project">
+          </div>
+          <div>
+            <p><a href="https://harman-nathan.github.io/harman-nathan-project-1/" target="_blank">Boat Ride Adventures</a> | SCSS, Flexbox</p>
+            <p>Remember travel? Boats? I'm not a boat person but still... sigh. This is my first bootcamp project—a multi-page responsive PDF design conversion built using Sass and Flexbox.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="skills" id="skills">
       <div class="wrapper">
         <h3>Skills I have</h3>
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3"></i>
-        <i class="fab fa-sass"></i>
-        <i class="fab fa-js"></i>
-        <i class="fab fa-react"></i>
-        <i class="fab fa-github"></i>
+        <ul class="skill-list">
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3"></i></li>
+          <li><i class="fab fa-sass"></i></li>
+          <li><i class="fab fa-js"></i></li>
+          <li><i class="fab fa-react"></i></li>
+          <li><i class="fab fa-github"></i></li>
+        </ul>
       </div>
     </section>
 
@@ -70,19 +93,22 @@
       <div class="wrapper">
         <h3>Hit me up</h3>
         <form action="#" class="form">
-          <label for="name" class="sr-only">Your Name</label>
-          <input type="text" name="name" id="name" placeholder="Enter your name:">
+          <div>
+            <label for="name" class="sr-only">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name:">
 
-          <label for="email" class="sr-only">Your Email</label>
-          <input type="email" name="email" id="email" placeholder="Enter your email:">
-
+            <label for="email" class="sr-only">Your Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email:">
+          </div>
+          
           <label for="message" class="sr-only">What's up?</label>
           <textarea name="message" id="message" placeholder="What's up?" cols=30 rows="10"></textarea>
-
-          <button type="submit">Send</button>
+          
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </section>
+
   </main>
 
   <footer>

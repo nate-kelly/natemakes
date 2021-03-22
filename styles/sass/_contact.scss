@@ -1,19 +1,29 @@
-button {
-  background: $green;
-  font-family: inherit;
-  font-weight: 500;
-  color: inherit;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 2rem 3rem;
-}
-
 form {
   display: flex;
   flex-direction: column;
+  align-items: space-between;
+  
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
 
   input {
+    width: 100%;
+    background: $offwhite;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    font-family: inherit;
+    border: 0.1rem solid $darkgrey;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    resize: none;
     background: $offwhite;
     margin-bottom: 3rem;
     padding: 2rem;
@@ -21,12 +31,15 @@ form {
     border: 0.1rem solid $darkgrey;
   }
 
-  textarea {
-    resize: none;
-    background: $offwhite;
-    margin-bottom: 3rem;
-    padding: 2rem;
+  button {
+    background: $green;
     font-family: inherit;
-    border: 0.1rem solid $darkgrey;
+    font-weight: 500;
+    color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2rem 4rem;
+    align-self: center;
   }
 }

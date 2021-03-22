@@ -1,0 +1,9 @@
+.project-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}

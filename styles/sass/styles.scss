@@ -1,6 +1,7 @@
 @import "setup";
 @import "variables";
 @import "header";
+@import "projects";
 @import "skills";
 @import "contact";
 
@@ -32,7 +33,7 @@ h2 {
 
 h3 {
   font-size: calc(2rem + 1vw);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 p {
