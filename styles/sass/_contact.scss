@@ -1,0 +1,32 @@
+button {
+  background: $green;
+  font-family: inherit;
+  font-weight: 500;
+  color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2rem 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    background: $offwhite;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    font-family: inherit;
+    border: 0.1rem solid $darkgrey;
+  }
+
+  textarea {
+    resize: none;
+    background: $offwhite;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    font-family: inherit;
+    border: 0.1rem solid $darkgrey;
+  }
+}

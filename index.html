@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
     rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d53415cc50.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -25,7 +26,6 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-
         <h1>Hi, I'm Nathan.</h1>
         <h2>I make websites.</h2>
       </div>
@@ -43,13 +43,13 @@
     <section class="projects" id="projects">
       <div class="wrapper">
         <h3>Things I've made</h3>
-        <p>Bored &amp; Lonely | React, API, Firebase</p>
+        <p><a href="https://bored-and-lonely.netlify.app/" target="_blank">Bored &amp; Lonely</a> | React, API, Firebase</p>
         <p>It's been a bit of a year. So I made this single-page React application that generates a random activity to do based on a bunch of categories. Save your activity for later and get to it when you finally pull yourself out of bed.</p>
 
-        <p>FlavourTown | JavaScript, API</p>
+        <p><a href="https://pisces-crew.github.io/flavourTown/" target="_blank">FlavourTown</a> | JavaScript, API</p>
         <p>FlavourTown is a JavaScript application that can turn you into a cannabis snob. Select from a variety of cannabis flavour profiles and the API will generate a randomized list of strains with more information. Like wine but, you know, for people who smoke weed.</p>
         
-        <p>Boat Ride Adventures | SCSS, Flexbox</p>
+        <p><a href="https://harman-nathan.github.io/harman-nathan-project-1/" target="_blank">Boat Ride Adventures</a> | SCSS, Flexbox</p>
         <p>Remember travel? Boats? I'm not a boat person but still... sigh. This is my first bootcamp project—a multi-page responsive PDF design conversion built using Sass and Flexbox.</p>
       </div>
     </section>
@@ -57,23 +57,29 @@
     <section class="skills" id="skills">
       <div class="wrapper">
         <h3>Skills I have</h3>
-        <p>Skill icon grid goes here. HTML5, CSS3/SASS, JavaScript, React, REST APIs, Firebase, GitHub/Git</p>
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3"></i>
+        <i class="fab fa-sass"></i>
+        <i class="fab fa-js"></i>
+        <i class="fab fa-react"></i>
+        <i class="fab fa-github"></i>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="wrapper">
+        <h3>Hit me up</h3>
         <form action="#" class="form">
-          <label for="name" class="sr-only">Enter your name:</label>
+          <label for="name" class="sr-only">Your Name</label>
           <input type="text" name="name" id="name" placeholder="Enter your name:">
 
-          <label for="email" class="sr-only">Enter your email:</label>
+          <label for="email" class="sr-only">Your Email</label>
           <input type="email" name="email" id="email" placeholder="Enter your email:">
 
           <label for="message" class="sr-only">What's up?</label>
-          <textarea name="message" id="message" placeholder="What's up?" cols=30 rows="1"></textarea>
+          <textarea name="message" id="message" placeholder="What's up?" cols=30 rows="10"></textarea>
 
-          <button type="submit">Reach out through the void</button>
+          <button type="submit">Send</button>
         </form>
       </div>
     </section>
