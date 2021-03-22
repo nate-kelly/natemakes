@@ -234,7 +234,8 @@ p {
 }
 
 header {
-  background: url(/assets/header-placeholder.jpg) no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 214, 162, 0.2)), to(rgba(64, 214, 162, 0.2))), url(../assets/header-placeholder.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(64, 214, 162, 0.2), rgba(64, 214, 162, 0.2)), url(../assets/header-placeholder.jpg) no-repeat center/cover;
   color: #fafafa;
 }
 
@@ -327,7 +328,6 @@ html {
 body {
   font-family: 'Epilogue', sans-serif;
   font-size: 2rem;
-  text-align: center;
   font-weight: 400;
   color: #333333;
 }
@@ -364,7 +364,7 @@ a {
 }
 
 section {
-  padding: 4rem 0;
+  padding: 10rem 0;
 }
 
 section:nth-child(odd) {
@@ -379,4 +379,5 @@ footer {
   background: #333333;
   padding: 1.5rem 0;
   color: #fafafa;
+  text-align: center;
 }

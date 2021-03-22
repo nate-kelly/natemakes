@@ -1,5 +1,8 @@
 header {
-  background: url(/assets/header-placeholder.jpg) no-repeat center / cover;
+  background: linear-gradient(
+    rgba(64, 214, 162, 0.2), 
+    rgba(64, 214, 162, 0.2), 
+  ), url(../assets/header-placeholder.jpg) no-repeat center / cover;
   color: $offwhite;
 }
 

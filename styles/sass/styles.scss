@@ -12,7 +12,6 @@ html {
 body {
   font-family: 'Epilogue', sans-serif;
   font-size: 2rem;
-  text-align: center;
   font-weight: 400;
   color: $darkgrey;
 }
@@ -49,7 +48,7 @@ a {
 }
 
 section {
-  padding: 4rem 0;
+  padding: 10rem 0;
 
   &:nth-child(odd) {
     background: $offwhite;
@@ -64,4 +63,5 @@ footer {
   background: #333333;
   padding: 1.5rem 0;
   color: $offwhite;
+  text-align: center;
 }
