@@ -1,6 +1,7 @@
 @import "setup";
 @import "variables";
 @import "sidebar";
+@import "dark";
 @import "header";
 @import "projects";
 @import "skills";
@@ -16,6 +17,20 @@ body {
   font-family: 'Epilogue', sans-serif;
   font-size: 2rem;
   color: $darkgrey;
+  transition: color 1s ease;
+
+  section {
+    padding: 10rem 0;
+    transition: background 1s ease;
+
+    &:nth-child(odd) {
+      background: $offwhite;
+    }
+
+    &:nth-child(even) {
+      background: $lightgrey;
+    }
+  } 
 }
 
 .wrapper {
@@ -70,17 +85,5 @@ p {
     &:after {
         transform: scaleX(1);    
     }
-  }
-}
-
-section {
-  padding: 10rem 0;
-
-  &:nth-child(odd) {
-    background: $offwhite;
-  }
-
-  &:nth-child(even) {
-    background: $lightgrey;
   }
 }

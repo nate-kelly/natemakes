@@ -269,6 +269,49 @@ ul {
           align-items: center;
 }
 
+body.dark {
+  color: #fafafa;
+}
+
+body.dark section:nth-child(odd) {
+  background: #333333;
+}
+
+body.dark section:nth-child(even) {
+  background: #2b2b2b;
+}
+
+body.dark input,
+body.dark textarea {
+  background: #333333;
+  color: #fafafa;
+}
+
+body.dark form button {
+  color: #333333;
+}
+
+body.dark footer {
+  background: #333333;
+}
+
+.dark-toggle {
+  background: none;
+  border: none;
+  padding: 1rem 0;
+  color: #fafafa;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.dark-toggle:hover, .dark-toggle:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 214, 162, 0.2)), to(rgba(64, 214, 162, 0.2))), url(../assets/header-placeholder.jpg) no-repeat 50% 20%/cover;
   background: linear-gradient(rgba(64, 214, 162, 0.2), rgba(64, 214, 162, 0.2)), url(../assets/header-placeholder.jpg) no-repeat 50% 20%/cover;
@@ -374,6 +417,8 @@ form input {
   padding: 2rem;
   font-family: inherit;
   border: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 form input:not(:last-child) {
@@ -388,13 +433,15 @@ form textarea {
   padding: 2rem;
   font-family: inherit;
   border: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-form button {
+form .submit-button {
   background: #40d6a2;
   font-family: inherit;
   font-weight: 500;
-  color: inherit;
+  color: #333333;
   border: none;
   outline: none;
   cursor: pointer;
@@ -402,11 +449,11 @@ form button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-form button:hover, form button:focus {
+form .submit-button:hover, form .submit-button:focus {
   background: #388697;
   color: #fafafa;
 }
@@ -461,6 +508,22 @@ body {
   font-family: 'Epilogue', sans-serif;
   font-size: 2rem;
   color: #333333;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+body section {
+  padding: 10rem 0;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+body section:nth-child(odd) {
+  background: #fafafa;
+}
+
+body section:nth-child(even) {
+  background: #f5f5f5;
 }
 
 .wrapper {
@@ -519,16 +582,4 @@ p {
 .link:hover:after, .link:focus:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-}
-
-section {
-  padding: 10rem 0;
-}
-
-section:nth-child(odd) {
-  background: #fafafa;
-}
-
-section:nth-child(even) {
-  background: #f5f5f5;
 }

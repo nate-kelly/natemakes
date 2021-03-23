@@ -1,0 +1,40 @@
+body.dark {
+
+  color: $offwhite;
+
+  section:nth-child(odd) {
+    background: $darkgrey;
+  }
+
+  section:nth-child(even) {
+    background: $nearblack;
+  }
+
+  input,
+  textarea {
+    background: $darkgrey;
+    color: $offwhite;
+  }
+
+  form button {
+    color: $darkgrey;
+  }
+
+  footer {
+    background: $darkgrey;
+  }
+}
+
+.dark-toggle {
+  background: none;
+  border: none;
+  padding: 1rem 0;
+  color: $offwhite;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}
