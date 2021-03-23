@@ -276,7 +276,7 @@ header {
 }
 
 .header-container {
-  height: 50vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,7 +342,7 @@ header {
 }
 
 .skill-list .fab {
-  font-size: 7rem;
+  font-size: calc(4rem + 2vw);
 }
 
 form {
@@ -407,7 +407,7 @@ form button {
 }
 
 form button:hover, form button:focus {
-  background: #57737A;
+  background: #388697;
   color: #fafafa;
 }
 
@@ -448,8 +448,8 @@ footer a:hover, footer a:focus {
 }
 
 .socials .fab:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 html {
@@ -491,10 +491,34 @@ p {
   margin: 1rem 0;
 }
 
-a {
-  color: #40d6a2;
-  font-weight: 600;
+.link {
+  color: inherit;
+  font-weight: 500;
   text-decoration: none;
+  padding-bottom: .6rem;
+  position: relative;
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: .2rem;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: #40d6a2;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.link:hover:after, .link:focus:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 section {

@@ -46,10 +46,31 @@ p {
   margin: 1rem 0;
 }
 
-a {
-  color: $green;
-  font-weight: 600;
+.link {
+  color: inherit;
+  font-weight: 500;
   text-decoration: none;
+  padding-bottom: .6rem;
+  position: relative;
+  
+  &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: .2rem;
+      transform: scaleX(0);
+      background-color: $green;
+      transition: transform 0.3s;
+  }
+
+  &:hover, &:focus {
+    &:after {
+        transform: scaleX(1);    
+    }
+  }
 }
 
 section {
