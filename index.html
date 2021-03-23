@@ -16,7 +16,18 @@
 
 <body>
   
+
   <header>
+
+    <!-- <div class="sidebar">
+      <ul class="sidebar-socials">
+        <li><a href="https://twitter.com/natekelly"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/ndkelly/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/nate-kelly"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/nathandavidkelly/"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div> -->
+
     <div class="wrapper">
       <div class="header-container">
         <h1>Hi, I'm Nathan.</h1>
@@ -33,7 +44,11 @@
     </div>
   </header>
 
+  
+
   <main>
+
+    
     
     <section class="about" id="about">
       <div class="wrapper">
@@ -92,17 +107,17 @@
     <section class="contact" id="contact">
       <div class="wrapper">
         <h3>Hit me up</h3>
-        <form action="#" class="form">
+        <form action="https://formspree.io/f/xknkwbok" method="POST" class="form">
           <div>
             <label for="name" class="sr-only">Enter your name:</label>
-            <input type="text" name="name" id="name" placeholder="Your name">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
 
             <label for="email" class="sr-only">Enter your email:</label>
-            <input type="email" name="email" id="email" placeholder="Your email">
+            <input type="email" name="email" id="email" placeholder="Your email" required>
           </div>
           
           <label for="message" class="sr-only">Got something to say?</label>
-          <textarea name="message" id="message" placeholder="What's up?" cols=30 rows="10"></textarea>
+          <textarea name="message" id="message" placeholder="What's up?" rows="10" required></textarea>
           
           <button type="submit">Send Message</button>
         </form>

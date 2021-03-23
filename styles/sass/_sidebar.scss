@@ -1,0 +1,13 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 8rem;
+  background-color: $darkgrey;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

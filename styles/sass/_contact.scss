@@ -14,7 +14,7 @@ form {
     margin-bottom: 3rem;
     padding: 2rem;
     font-family: inherit;
-    border: 0.1rem solid $darkgrey;
+    border: 0;
 
     &:not(:last-child) {
       margin-right: 3rem;
@@ -28,7 +28,7 @@ form {
     margin-bottom: 3rem;
     padding: 2rem;
     font-family: inherit;
-    border: 0.1rem solid $darkgrey;
+    border: 0;
   }
 
   button {

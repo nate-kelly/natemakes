@@ -1,5 +1,6 @@
 @import "setup";
 @import "variables";
+@import "sidebar";
 @import "header";
 @import "projects";
 @import "skills";
@@ -59,6 +60,6 @@ section {
   }
 
   &:nth-child(even) {
-    background: $lightgray;
+    background: $lightgrey;
   }
 }
