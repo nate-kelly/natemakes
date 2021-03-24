@@ -1,9 +1,17 @@
 .skill-list {
+  // display: grid;
+  // grid-template-columns: repeat(8, 1fr);
+  // gap: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 
-  .fab {
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fab, .fas {
     font-size: calc(4rem + 2vw);
   }
 }

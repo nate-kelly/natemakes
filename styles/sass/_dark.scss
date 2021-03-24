@@ -16,8 +16,8 @@ body.dark {
     color: $offwhite;
   }
 
-  form button {
-    color: $darkgrey;
+  .submit-button:hover {
+    color: $offwhite;
   }
 
   footer {
@@ -31,10 +31,10 @@ body.dark {
   padding: 1rem 0;
   color: $offwhite;
   cursor: pointer;
-  transition: transform 0.2s linear;
+  transition: color 0.2s linear;
 
   &:hover,
   &:focus {
-    transform: scale(1.2);
+    color: $green;
   }
 }

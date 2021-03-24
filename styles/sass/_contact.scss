@@ -38,7 +38,7 @@ form {
     font-family: inherit;
     font-weight: 500;
     color: $darkgrey;
-    border: none;
+    border: .3rem solid transparent;
     outline: none;
     cursor: pointer;
     padding: 2rem 4rem;
@@ -47,8 +47,8 @@ form {
 
     &:hover,
     &:focus {
-      background: $aqua;
-      color: $offwhite;
+      background: none;
+      border: .3rem solid $green;
     }
   }
 }

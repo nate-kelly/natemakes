@@ -20,12 +20,7 @@ footer {
   justify-content: center;
   margin-top: 3rem;
   .fab {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0 3rem;
-    transition: transform 0.2s linear;
-
-    &:hover {
-      transform: scale(1.5);
-    }
   }
 }
