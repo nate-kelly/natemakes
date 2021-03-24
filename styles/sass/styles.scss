@@ -8,6 +8,10 @@
 @import "contact";
 @import "footer";
 
+// * {
+//   border: 1px solid red;
+// }
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -20,7 +24,7 @@ body {
   transition: color 1s ease;
 
   section {
-    padding: 10rem 0;
+    padding: 10vh 0;
     transition: background-color 1s ease;
 
     &:nth-child(odd) {

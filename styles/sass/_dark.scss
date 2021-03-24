@@ -28,6 +28,7 @@ body.dark {
 .dark-toggle {
   background: none;
   border: none;
+  outline: none;
   color: $offwhite;
   cursor: pointer;
   transition: color 0.2s linear;
