@@ -1,9 +1,13 @@
 .project-info {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 
   &:not(:last-child) {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  div {
+    flex-basis: 48%;
   }
 }

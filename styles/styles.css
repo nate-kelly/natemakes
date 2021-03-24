@@ -402,26 +402,32 @@ a {
 }
 
 .project-info {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  gap: 5rem;
-}
-
-.project-info:not(:last-child) {
-  margin-bottom: 5rem;
-}
-
-.skill-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.project-info:not(:last-child) {
+  margin-bottom: 10rem;
+}
+
+.project-info div {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.skill-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(8rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 2rem;
 }
 
 .skill-list li {
@@ -438,10 +444,10 @@ a {
 }
 
 .skill-list .fab, .skill-list .fas {
-  font-size: calc(4rem + 2vw);
+  font-size: calc(4rem + 1vw);
 }
 
-form {
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,7 +460,7 @@ form {
           align-items: space-between;
 }
 
-form div {
+.form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,7 +469,7 @@ form div {
           justify-content: space-between;
 }
 
-form input {
+.form input {
   width: 100%;
   background: #fafafa;
   margin-bottom: 3rem;
@@ -474,11 +480,11 @@ form input {
   transition: all 1s ease;
 }
 
-form input:not(:last-child) {
+.form input:not(:last-child) {
   margin-right: 3rem;
 }
 
-form textarea {
+.form textarea {
   width: 100%;
   resize: none;
   background: #fafafa;
@@ -490,7 +496,7 @@ form textarea {
   transition: all 1s ease;
 }
 
-form .submit-button {
+.form .submit-button {
   background: #40d6a2;
   font-family: inherit;
   font-weight: 500;
@@ -506,7 +512,7 @@ form .submit-button {
   transition: all .5s ease;
 }
 
-form .submit-button:hover, form .submit-button:focus {
+.form .submit-button:hover, .form .submit-button:focus {
   background: none;
   border: 0.3rem solid #40d6a2;
 }
@@ -627,4 +633,34 @@ p {
 .link:hover:after, .link:focus:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+@media (max-width: 940px) {
+  .project-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+  }
+  p {
+    font-size: 1.6rem;
+  }
 }
