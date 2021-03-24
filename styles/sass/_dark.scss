@@ -3,11 +3,11 @@ body.dark {
   color: $offwhite;
 
   section:nth-child(odd) {
-    background: $darkgrey;
+    background-color: $darkgrey;
   }
 
   section:nth-child(even) {
-    background: $nearblack;
+    background-color: $nearblack;
   }
 
   input,
@@ -28,7 +28,6 @@ body.dark {
 .dark-toggle {
   background: none;
   border: none;
-  padding: 1rem 0;
   color: $offwhite;
   cursor: pointer;
   transition: color 0.2s linear;
@@ -37,4 +36,9 @@ body.dark {
   &:focus {
     color: $green;
   }
+
+  svg {
+    transform: rotate(-135deg);
+  }
 }
+

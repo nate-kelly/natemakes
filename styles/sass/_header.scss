@@ -1,20 +1,29 @@
+// * {
+//   border: 1px solid red;
+// }
+
 header {
   background: url(../assets/header-placeholder.jpg) no-repeat 50% 20% / cover;
   color: $offwhite;
 }
 
 .header-container {
-  height: 60vh;
+  height: 70vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
   padding: 10rem 0;
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
-  padding: 3rem 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
