@@ -2,6 +2,9 @@
   .project-info {
     flex-direction: column;
   }
+  .project-link {
+    margin: 0 auto;
+  }
   .form div {
     flex-direction: column;
   }
@@ -17,7 +20,16 @@
   .wrapper {
     width: 90%;
   }
-  p {
+  body {
     font-size: 1.6rem;
+  }
+
+  p {
+    line-height: 2;
+  }
+
+  .project-link,
+  .submit-button {
+    width: 100%;
   }
 }

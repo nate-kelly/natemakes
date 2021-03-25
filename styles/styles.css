@@ -415,12 +415,35 @@ a {
 }
 
 .project-info:not(:last-child) {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .project-info div {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+}
+
+.project-info p:nth-child(2) {
+  margin: 2rem 0;
+}
+
+.project-link {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background: #40d6a2;
+  font-family: inherit;
+  font-weight: 500;
+  color: inherit;
+  border: .3rem solid transparent;
+  padding: 1.5rem 4rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.project-link:hover, .project-link:focus {
+  background: none;
+  border: 0.3rem solid #40d6a2;
 }
 
 .skill-list {
@@ -446,6 +469,7 @@ a {
 
 .skill-list .fab, .skill-list .fas {
   font-size: calc(4rem + 1vw);
+  margin-bottom: 1.5rem;
 }
 
 .form {
@@ -505,7 +529,7 @@ a {
   border: .3rem solid transparent;
   outline: none;
   cursor: pointer;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -558,6 +582,7 @@ body {
   font-family: 'Epilogue', sans-serif;
   font-size: 2rem;
   color: #333333;
+  background: #333333;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
 }
@@ -574,6 +599,11 @@ body section:nth-child(odd) {
 
 body section:nth-child(even) {
   background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -601,8 +631,7 @@ h3 {
 
 p {
   font-weight: 300;
-  line-height: 1.7;
-  margin: 1rem 0;
+  line-height: 1.9;
 }
 
 .link {
@@ -642,6 +671,9 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .project-link {
+    margin: 0 auto;
+  }
   .form div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -660,7 +692,14 @@ p {
   .wrapper {
     width: 90%;
   }
-  p {
+  body {
     font-size: 1.6rem;
+  }
+  p {
+    line-height: 2;
+  }
+  .project-link,
+  .submit-button {
+    width: 100%;
   }
 }

@@ -4,10 +4,32 @@
   align-items: flex-start;
 
   &:not(:last-child) {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 
   div {
     flex-basis: 48%;
+  }
+  p:nth-child(2) {
+    margin: 2rem 0;
+  }
+}
+
+.project-link {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background: $green;
+  font-family: inherit;
+  font-weight: 500;
+  color: inherit;
+  border: .3rem solid transparent;
+  padding: 1.5rem 4rem;
+  transition: all .5s ease;
+
+  &:hover,
+  &:focus {
+    background: none;
+    border: .3rem solid $green;
   }
 }

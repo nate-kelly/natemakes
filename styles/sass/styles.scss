@@ -8,10 +8,6 @@
 @import "contact";
 @import "footer";
 
-// * {
-//   border: 1px solid red;
-// }
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -21,6 +17,7 @@ body {
   font-family: 'Epilogue', sans-serif;
   font-size: 2rem;
   color: $darkgrey;
+  background: $darkgrey;
   transition: color 1s ease;
 
   section {
@@ -35,6 +32,11 @@ body {
       background-color: $lightgrey;
     }
   } 
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -62,8 +64,7 @@ h3 {
 
 p {
   font-weight: 300;
-  line-height: 1.7;
-  margin: 1rem 0;
+  line-height: 1.9;
 }
 
 .link {
