@@ -42,9 +42,8 @@ body.dark {
   cursor: pointer;
 } 
 
-.sun-moon {
-  width: calc(3rem + 1vw);
-  transform: rotate(-135deg);
+.material-icons {
+  font-size: calc(2.5rem + 1vw);
   transition: color 0.2s linear;
 
   &:hover,

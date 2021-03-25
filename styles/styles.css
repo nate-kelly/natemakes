@@ -290,15 +290,13 @@ body.dark footer {
   cursor: pointer;
 }
 
-.sun-moon {
-  width: calc(3rem + 1vw);
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+.material-icons {
+  font-size: calc(2.5rem + 1vw);
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 
-.sun-moon:hover, .sun-moon:focus {
+.material-icons:hover, .material-icons:focus {
   color: #40d6a2;
 }
 
