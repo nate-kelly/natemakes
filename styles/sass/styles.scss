@@ -14,9 +14,11 @@ html {
 body {
   font-family: 'Epilogue', sans-serif;
   font-size: 2rem;
-  color: $darkgrey;
-  background: $darkgrey;
   transition: color 1s ease;
+
+  header {
+    transition: all .8s linear;
+  }
 
   section {
     padding: 10vh 0;
@@ -91,9 +93,5 @@ p {
     }
   }
 }
-
-// * {
-//   border: 1px solid red;
-// }
 
 @import "media-queries";
