@@ -16,7 +16,10 @@ body.dark {
     color: $offwhite;
   }
 
-  .submit-button:hover {
+  .submit-button:hover,
+  .submit-button:focus,
+  .project-link:hover,
+  .project-link:focus {
     color: $offwhite;
   }
 
@@ -29,17 +32,18 @@ body.dark {
   background: none;
   border: none;
   outline: none;
-  color: $offwhite;
   cursor: pointer;
+} 
+
+.sun-moon {
+  width: calc(3rem + 1vw);
+  transform: rotate(-135deg);
+  color: $offwhite;
   transition: color 0.2s linear;
 
   &:hover,
   &:focus {
     color: $green;
-  }
-
-  svg {
-    transform: rotate(-135deg);
   }
 }
 

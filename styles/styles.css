@@ -246,29 +246,6 @@ ul {
   list-style: none;
 }
 
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 8rem;
-  background-color: #333333;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 body.dark {
   color: #fafafa;
 }
@@ -287,7 +264,10 @@ body.dark textarea {
   color: #fafafa;
 }
 
-body.dark .submit-button:hover {
+body.dark .submit-button:hover,
+body.dark .submit-button:focus,
+body.dark .project-link:hover,
+body.dark .project-link:focus {
   color: #fafafa;
 }
 
@@ -299,23 +279,24 @@ body.dark footer {
   background: none;
   border: none;
   outline: none;
-  color: #fafafa;
   cursor: pointer;
+}
+
+.sun-moon {
+  width: calc(3rem + 1vw);
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  color: #fafafa;
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
 }
 
-.dark-toggle:hover, .dark-toggle:focus {
+.sun-moon:hover, .sun-moon:focus {
   color: #40d6a2;
 }
 
-.dark-toggle svg {
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
-
 header {
-  background: url(../assets/nathan-3.jpg) no-repeat center/cover;
+  background: url(../assets/header.jpg) no-repeat center/cover;
   color: #fafafa;
 }
 
@@ -434,7 +415,7 @@ a {
   background: #40d6a2;
   font-family: inherit;
   font-weight: 500;
-  color: inherit;
+  color: #333333;
   border: .3rem solid transparent;
   padding: 1.5rem 4rem;
   -webkit-transition: all .5s ease;
@@ -551,8 +532,8 @@ footer {
 
 footer a {
   color: inherit;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  -webkit-transition: color .4s ease;
+  transition: color .4s ease;
 }
 
 footer a:hover, footer a:focus {
@@ -575,7 +556,6 @@ footer a:hover, footer a:focus {
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 body {
