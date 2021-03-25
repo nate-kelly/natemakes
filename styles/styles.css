@@ -327,6 +327,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -451,7 +453,7 @@ a {
   background: #40d6a2;
   font-family: inherit;
   font-weight: 500;
-  color: #333333;
+  color: #2b2b2b;
   border: .3rem solid transparent;
   padding: 1.5rem 4rem;
   -webkit-transition: all .5s ease;
@@ -542,7 +544,7 @@ a {
   background: #40d6a2;
   font-family: inherit;
   font-weight: 500;
-  color: #333333;
+  color: #2b2b2b;
   border: .3rem solid transparent;
   outline: none;
   cursor: pointer;
@@ -602,8 +604,8 @@ body {
 }
 
 body header {
-  -webkit-transition: all .8s linear;
-  transition: all .8s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
 }
 
 body section {
@@ -655,7 +657,7 @@ p {
 
 .link {
   color: inherit;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   padding-bottom: .6rem;
   position: relative;
@@ -698,6 +700,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .project-image {
+    margin-bottom: 3rem;
   }
 }
 
