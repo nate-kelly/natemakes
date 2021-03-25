@@ -21,9 +21,20 @@
     width: 90%;
   }
   body {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
-
+  .header-container,
+  section {
+    padding: 5vh 0;
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  h1, h2 {
+    margin-bottom: 1rem;
+  }
   p {
     line-height: 2;
   }
