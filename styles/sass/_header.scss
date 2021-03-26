@@ -17,6 +17,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  letter-spacing: .1rem;
 }
 
 .header-content {
@@ -25,18 +26,13 @@ header {
 }
 
 .header-image {
-  width: 50%;
+  width: 70%;
   align-self: center;
   margin: 5vh 0;
 
   img {
     box-shadow: .8rem .8rem $green;
   }
-}
-
-a {
-  color: inherit;
-  font-weight: 400;
 }
 
 .focus {

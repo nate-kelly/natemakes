@@ -8,13 +8,14 @@
     justify-content: space-between;
   }
 
-  input {
+  input,
+  textarea {
     width: 100%;
     background: $offwhite;
     margin-bottom: 3rem;
     padding: 2rem;
     font-family: inherit;
-    border: 0;
+    border: .1rem solid $medgrey;
     transition: all 1s ease;
 
     &:not(:last-child) {
@@ -23,14 +24,7 @@
   }
 
   textarea {
-    width: 100%;
     resize: none;
-    background: $offwhite;
-    margin-bottom: 3rem;
-    padding: 2rem;
-    font-family: inherit;
-    border: 0;
-    transition: all 1s ease;
   }
 
   .submit-button {
