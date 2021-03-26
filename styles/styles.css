@@ -284,6 +284,7 @@ body.dark .project-link:focus {
   border: none;
   outline: none;
   color: inherit;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -315,7 +316,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10vh 0;
 }
 
 .nav {
@@ -590,6 +590,7 @@ body {
 }
 
 body header {
+  padding: 10vh 0;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
 }
@@ -714,7 +715,7 @@ p {
   body {
     font-size: 1.7rem;
   }
-  .header-container,
+  header,
   section {
     padding: 5vh 0;
   }
