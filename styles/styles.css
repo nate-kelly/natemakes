@@ -440,15 +440,15 @@ header {
 .project-link {
   display: inline-block;
   text-decoration: none;
-  text-align: center;
   background: #40d6a2;
   font-family: inherit;
   font-weight: 500;
   color: #2b2b2b;
-  border: .3rem solid transparent;
+  border: 0.3rem solid transparent;
   padding: 1.5rem 4rem;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  margin-right: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .project-link:hover, .project-link:focus {
@@ -684,9 +684,6 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .project-link {
-    margin: 0 auto;
   }
   .form div {
     -webkit-box-orient: vertical;
