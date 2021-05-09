@@ -732,6 +732,10 @@ p {
   p {
     line-height: 2;
   }
+  .project-link {
+    margin-right: 0;
+    margin-top: 1rem;
+  }
   .project-link,
   .submit-button {
     width: 100%;
