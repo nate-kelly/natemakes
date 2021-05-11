@@ -284,7 +284,6 @@ body.dark .project-link:focus {
 .dark-toggle {
   background: none;
   border: none;
-  outline: none;
   color: inherit;
   padding: 0;
   cursor: pointer;
@@ -484,9 +483,17 @@ header {
           align-items: center;
 }
 
-.skill-list .fab, .skill-list .fas {
+.skill-list .fab,
+.skill-list .fas {
   font-size: calc(4rem + 1vw);
   margin-bottom: 1.5rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.skill-list .fab:hover,
+.skill-list .fas:hover {
+  color: #40d6a2;
 }
 
 .form {

@@ -8,8 +8,14 @@
     flex-direction: column;
     align-items: center;
   }
-  .fab, .fas {
+  .fab,
+  .fas {
     font-size: calc(4rem + 1vw);
     margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $green;
+    }
   }
 }
