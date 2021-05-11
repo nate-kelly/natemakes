@@ -12,19 +12,19 @@ html {
 }
 
 body {
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   font-size: 2rem;
   color: $darkgrey;
   transition: color 1s ease;
 
   header {
     padding: 10vh 0;
-    transition: all .5s linear;
+    transition: all 0.3s ease;
   }
 
   section {
     padding: 10vh 0;
-    transition: background-color 1s ease;
+    transition: background-color 0.3s ease;
 
     &:nth-child(odd) {
       background-color: $offwhite;
@@ -33,7 +33,7 @@ body {
     &:nth-child(even) {
       background-color: $lightgrey;
     }
-  } 
+  }
 }
 
 .container {
@@ -76,25 +76,26 @@ p {
   color: inherit;
   font-weight: 600;
   text-decoration: none;
-  padding-bottom: .6rem;
+  padding-bottom: 0.6rem;
   position: relative;
-  
+
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: .2rem;
+    height: 0.2rem;
     transform: scaleX(0);
     background: $green;
     transition: transform 0.3s;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     &:after {
-      transform: scaleX(1);    
+      transform: scaleX(1);
     }
   }
 }
