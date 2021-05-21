@@ -13,7 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
   <script src="https://kit.fontawesome.com/d53415cc50.js" crossorigin="anonymous"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C28DRJ4L4T"></script>
@@ -31,7 +32,7 @@
   <header>
     <div class="wrapper">
       <div class="header-container">
-        <nav data-aos="fade-down">
+        <nav class="animate__animated animate__fadeInDownBig">
           <ul class="nav">
             <li><a class="link" href="#about" data-scroll>About</a></li>
             <li><a class="link" href="#projects" data-scroll>Projects</a></li>
@@ -40,15 +41,15 @@
           </ul>
         </nav>
         <div class="header-image">
-          <img class="focus" src="./assets/header-image.jpg"
+          <img class="animate__animated animate__fadeIn" src="./assets/header-image.jpg"
             alt="Photo of Nathan looking at the camera wearing a mint green hoodie">
         </div>
         <div class="header-content">
-          <div class="header-text focus">
+          <div class="header-text animate__animated animate__fadeIn">
             <h1>Hi, I'm Nathan.<span class="blinking-cursor">|</span></h1>
             <h2>I make websites.</h2>
           </div>
-          <button class="dark-toggle focus">
+          <button class="dark-toggle animate__animated animate__fadeIn">
             <span class="sr-only">Dark mode toggle button</span>
             <span class="material-icons" aria-label="Dark mode toggle button">brightness_4</span>
           </button>
@@ -198,7 +199,7 @@
   </footer>
 
   <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       duration: 900,

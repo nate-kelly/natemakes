@@ -36,36 +36,6 @@ header {
   }
 }
 
-.focus {
-  -webkit-animation: focus 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: focus 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
-@-webkit-keyframes focus {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes focus {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
 .blinking-cursor {
   font-weight: inherit;
   font-size: inherit;
